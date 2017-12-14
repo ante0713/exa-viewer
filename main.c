@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#test
 int main() {
     setvbuf(stdout, NULL, _IOLBF, 0);
     printf("Hello, World!\n");
