@@ -1,15 +1,20 @@
 #include <stdio.h>
+#include "logger.h"
 
-#test
 int main() {
     setvbuf(stdout, NULL, _IOLBF, 0);
-    printf("Hello, World!\n");
 
+    debugLog("Exaviewer Started\n");
 
-    int c;
-    while ((c = getchar()) != EOF) {
-        //printf("%c\n", c);
+    char line[1000];
+    while (1) {
+        scanf("%s", line);
+        debugLog(line);
+
+        if (line == "shutdown")
+            break;
     }
+
     return 0;
 
 }

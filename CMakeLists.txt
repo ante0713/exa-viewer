@@ -3,4 +3,4 @@ project(exa_viewer C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(exa_viewer main.c)
+add_executable(exa_viewer main.c logger.c logger.h)
